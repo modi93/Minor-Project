@@ -1,0 +1,126 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Admin.master.cs" Inherits="Admin_Admin" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Untitled Page</title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .style1
+        {
+            width: 96%;
+            height: 418px;
+        }
+        .style2
+        {
+        }
+        .style3
+        {
+            width: 173px;
+            height: 223px;
+        }
+        .style4
+        {
+            height: 223px;
+            width: 610px;
+        }
+        .style5
+        {
+            font-family: Arial;
+        }
+        .style6
+        {
+            width: 610px;
+        }
+        .style7
+        {
+            width: 173px;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <table class="style1">
+        <tr>
+            <td class="style3">
+                <asp:Image ID="Image1" runat="server" Height="219px" 
+                    ImageUrl="~/Images/index1.jpeg" Width="152px" />
+            </td>
+            <td bgcolor="Blue" class="style4">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <asp:Label ID="Label1" runat="server" Font-Bold="True" Font-Size="XX-Large" 
+                    ForeColor="Yellow" Text="ONLINE NATIONAL POLLING"></asp:Label>
+                <br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <span class="style5" style="color: #FFFFFF">Admin Module</span></td>
+        </tr>
+        <tr>
+            <td bgcolor="Yellow" class="style7">
+                <asp:Menu ID="Menu1" runat="server" Height="189px" Width="134px">
+                    <Items>
+                        <asp:MenuItem Text="Activate User's" Value="Giving id's to citizen's" 
+                            NavigateUrl="~/Admin/Create User.aspx">
+                        </asp:MenuItem>
+                        <asp:MenuItem Text="Counting vote's" Value="Counting vote's" 
+                            NavigateUrl="~/Admin/VotesCounting.aspx"></asp:MenuItem>
+                        <asp:MenuItem Text="Add Constitution" Value="Add State" 
+                            NavigateUrl="~/Admin/AddConstitution.aspx"></asp:MenuItem>
+                        <asp:MenuItem Text="Add District" Value="Add District" 
+                            NavigateUrl="~/Admin/Add District.aspx"></asp:MenuItem>
+                        <asp:MenuItem NavigateUrl="~/Home.aspx" Text="Home Page" Value="Home Page">
+                        </asp:MenuItem>
+                        <asp:MenuItem NavigateUrl="~/Admin/Officer.aspx" 
+                            Text="Send report's to officer" Value="Send report's to officer">
+                        </asp:MenuItem>
+                    </Items>
+                </asp:Menu>
+            </td>
+            <td class="style6">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                    <p>
+                        <br />
+                    </p>
+                    <p>
+                    </p>
+                    <p>
+                    </p>
+                    <p>
+                    </p>
+                    <p>
+                    </p>
+                    <p>
+                    </p>
+                </asp:ContentPlaceHolder>
+            </td>
+        </tr>
+        <tr>
+            <td bgcolor="White" class="style2" colspan="2">
+                <asp:Menu ID="Menu2" runat="server" Height="32px" Orientation="Horizontal" 
+                    Width="862px">
+                    <Items>
+                        <asp:MenuItem Text="Activate User's" Value="Giving id's to citizen's" 
+                            NavigateUrl="~/Admin/Create User.aspx">
+                        </asp:MenuItem>
+                        <asp:MenuItem Text="Counting vote's" Value="Counting vote's" 
+                            NavigateUrl="~/Admin/VotesCounting.aspx"></asp:MenuItem>
+                        <asp:MenuItem Text="Add District" Value="Add District" 
+                            NavigateUrl="~/Admin/Add District.aspx"></asp:MenuItem>
+                        <asp:MenuItem Text="Add Constitution" Value="Add Constitution" 
+                            NavigateUrl="~/Admin/AddConstitution.aspx"></asp:MenuItem>
+                        <asp:MenuItem Text="Add District" Value="Add District" 
+                            NavigateUrl="~/Admin/Add District.aspx"></asp:MenuItem>
+                        <asp:MenuItem NavigateUrl="~/Home.aspx" Text="Home Page" Value="Home Page">
+                        </asp:MenuItem>
+                        <asp:MenuItem NavigateUrl="~/Admin/Officer.aspx" 
+                            Text="Send Report's to Officer" Value="Send Report's to Officer">
+                        </asp:MenuItem>
+                    </Items>
+                </asp:Menu>
+            </td>
+        </tr>
+    </table>
+</form>
+</body>
+</html>

@@ -1,0 +1,105 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Admin.master.cs" Inherits="Officer_Admin" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Untitled Page</title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .style1
+        {
+            width: 100%;
+            height: 450px;
+        }
+        .style2
+        {
+            width: 155px;
+        }
+        .style3
+        {
+            width: 155px;
+            height: 130px;
+        }
+        .style4
+        {
+            height: 130px;
+        }
+        .style5
+        {
+            width: 155px;
+            height: 222px;
+        }
+        .style6
+        {
+            height: 222px;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <table class="style1">
+        <tr>
+            <td class="style3">
+                <asp:Image ID="Image1" runat="server" Height="212px" 
+                    ImageUrl="~/Images/index1.jpeg" Width="158px" />
+            </td>
+            <td bgcolor="#3399FF" class="style4">
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <asp:Label ID="Label1" runat="server" Font-Bold="True" Font-Size="XX-Large" 
+                    ForeColor="#CC3300" Text="Field Officer "></asp:Label>
+            </td>
+        </tr>
+        <tr>
+            <td class="style5">
+                <asp:Menu ID="Menu1" runat="server" Height="276px" Width="150px">
+                    <Items>
+                        <asp:MenuItem Text="Voter Information" Value="Voter Information" 
+                            NavigateUrl="~/Officer/VoterInfo.aspx"></asp:MenuItem>
+                        <asp:MenuItem Text="Admin Report Page" Value="Result Page" 
+                            NavigateUrl="~/Officer/Result.aspx"></asp:MenuItem>
+                        <asp:MenuItem NavigateUrl="~/Home.aspx" Text="Home Page" Value="Home Page">
+                        </asp:MenuItem>
+                    </Items>
+                </asp:Menu>
+            </td>
+            <td class="style6">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                    <p>
+                        <br />
+                    </p>
+                    <p>
+                    </p>
+                    <p>
+                    </p>
+                    <p>
+                    </p>
+                    <p>
+                    </p>
+                    <p>
+                    </p>
+                </asp:ContentPlaceHolder>
+            </td>
+        </tr>
+        <tr>
+            <td class="style2">
+                &nbsp;</td>
+            <td>
+                <asp:Menu ID="Menu2" runat="server" Height="37px" Orientation="Horizontal" 
+                    Width="763px">
+                    <Items>
+                        <asp:MenuItem NavigateUrl="~/Officer/VoterInfo.aspx" Text="VoterInformation" 
+                            Value="VoterInformation"></asp:MenuItem>
+                        <asp:MenuItem NavigateUrl="~/Officer/Result.aspx" Text="Admin Report Page" 
+                            Value="Report Page"></asp:MenuItem>
+                        <asp:MenuItem NavigateUrl="~/Home.aspx" Text="Home Page" Value="Home Page">
+                        </asp:MenuItem>
+                    </Items>
+                </asp:Menu>
+            </td>
+        </tr>
+    </table>
+</form>
+</body>
+</html>
